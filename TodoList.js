@@ -5,8 +5,8 @@ let input = document.getElementById('input');
 
 let add = function add(first="") {
     liTag = document.createElement('li');
-    input = document.getElementById('input').innerText;
-    liText = document.createTextNode(input);
+    input = document.getElementById('input').textContent;
+    liText = document.createTextNode(`${input}`);
 
     liTag.appendChild(liText);
     ulTag.appendChild(liTag);
