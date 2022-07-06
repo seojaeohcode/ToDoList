@@ -2,10 +2,11 @@ let ulTag = document.querySelector(".items");
 let liTag = document.createElement('li');
 let liText = document.createTextNode('LG');
 let input = document.getElementById('input');
-let Text1 = input.innerText;
+
 let add = function add(first="") {
     liTag = document.createElement('li');
-    liText = document.createTextNode('Seojaeoh');
+    input = document.getElementById('input').innerText;
+    liText = document.createTextNode(input);
 
     liTag.appendChild(liText);
     ulTag.appendChild(liTag);
