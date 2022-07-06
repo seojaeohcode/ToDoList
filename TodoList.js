@@ -1,10 +1,11 @@
-let ulTag = document.querySelector("wrapper").querySelector(".TodoList").querySelector(".list").querySelector(".items");
+let ulTag = document.querySelector(".items");
 let liTag = document.createElement('li');
-let liText = document.createTextNode('');
-
+let liText = document.createTextNode('LG');
+let input = document.getElementById('input');
+let Text1 = input.innerText;
 let add = function add(first="") {
     liTag = document.createElement('li');
-    liText = document.createTextNode(first);
+    liText = document.createTextNode('Seojaeoh');
 
     liTag.appendChild(liText);
     ulTag.appendChild(liTag);
@@ -21,7 +22,7 @@ let remove = function remove(first="") {
     return true;
 }
 
-let addEvent = document.querySelector("wrapper").querySelector(".TodoList").querySelector(".inputwindow").querySelector("#add");
+let addEvent = document.querySelector("#add");
 addEvent.addEventListener('click', add)
 
 let removeEvent = document.querySelector("#remove");
