@@ -1,6 +1,6 @@
 let ulTag = document.querySelector(".items");
 let liTag = document.createElement('li');
-let liText = document.createTextNode('LG');
+let liText = document.createTextNode('');
 let input = document.getElementById('input');
 
 let add = function add(first="") {
